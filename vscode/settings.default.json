@@ -3,30 +3,97 @@
 	"git.showProgress": true,
 	"git.autoRepositoryDetection": true,
 	"git.decorations.enabled": true,
-	"github.showAvatar": true,
-	"git.confirmSync": true,
-	"git.terminalAuthentication": false,
-	"github.gitAuthentication": true,
-	"github.gitProtocol": "ssh",
+	"git.enableCommitSigning": true,
+	"git.confirmSync": false,
+	"git.ignoreRebaseWarning": true,
+	"git.replaceTagsWhenPull": true,
 	"git.blame.editorDecoration.enabled": true,
 	"git.blame.statusBarItem.enabled": true,
 	"git.blame.editorDecoration.template": "${authorName}, (${authorDateAgo}) • ${subject}",
 	"git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
-	"diffEditor.ignoreTrimWhitespace": false,
-	"files.autoSave": "onFocusChange",
-	"workbench.startupEditor": "none",
-	"terminal.integrated.enableMultiLinePasteWarning": "never",
-	"workbench.layoutControl.enabled": true,
-	"explorer.confirmDelete": false,
-	"workbench.sideBar.location": "right",
-	"editor.comments.ignoreEmptyLines": false,
+	"git.terminalAuthentication": false,
+	"github.showAvatar": true,
+	"github.gitAuthentication": true,
+	"github.gitProtocol": "ssh",
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": true,
+	"diffEditor.hideUnchangedRegions.enabled": true,
+	"diffEditor.experimental.showMoves": true,
 	"diffEditor.codeLens": true,
 	"diffEditor.renderSideBySide": true,
+	"explorer.confirmDelete": false,
+	"editor.comments.ignoreEmptyLines": false,
 	"editor.mouseWheelZoom": true,
-	"terminal.integrated.mouseWheelZoom": true,
-	"workbench.iconTheme": "material-icon-theme",
 	"editor.formatOnSave": true,
+	"files.autoSave": "onFocusChange",
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 4,
+	"prettier.printWidth": 120,
+	"prettier.useTabs": true,
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"terminal.integrated.mouseWheelZoom": true,
+	"workbench.startupEditor": "none",
+	"workbench.layoutControl.enabled": true,
+	"workbench.colorTheme": "GitHub Dark Default",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.activityBar.location": "top",
-	"window.commandCenter": true,
-	"zenMode.hideActivityBar": false
+	"go.toolsManagement.autoUpdate": true,
+	"go.useLanguageServer": true,
+	"go.addTags": {
+		"tags": "json",
+		"options": "json=omitempty",
+		"promptForTags": false,
+		"transform": "snakecase"
+	},
+	"gopls": {
+		"formatting.gofumpt": true,
+		"usePlaceholders": true,
+		"ui.semanticTokens": true,
+		"staticcheck": true,
+		"ui.diagnostic.analyses": {
+			"ST1000": false,
+			"ST1003": false,
+			"ST1021": false
+		}
+	},
+	"go.lintTool": "golangci-lint",
+	"go.lintFlags": ["--fast", "--timeout", "5m", "--fix"],
+	"go.inlayHints.compositeLiteralFields": true,
+	"go.inlayHints.compositeLiteralTypes": true,
+	"go.inlayHints.functionTypeParameters": true,
+	"go.inlayHints.parameterNames": true,
+	"go.inlayHints.rangeVariableTypes": true,
+	"go.inlayHints.constantValues": true,
+	"go.diagnostic.vulncheck": "Imports",
+	"go.toolsEnvVars": {
+		"GOFLAGS": "-buildvcs=false"
+	},
+	"[go]": {
+		"editor.insertSpaces": false,
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"editor.stickyScroll.enabled": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "always",
+			"source.fixAll": "always"
+		}
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[dockercompose]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": "advanced",
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[github-actions-workflow]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

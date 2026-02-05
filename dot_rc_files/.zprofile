@@ -18,6 +18,9 @@ gstats() {
 alias dev-helden='ssh -i ~/.ssh/ihrhelden-server-dev-stage.pem ubuntu@ec2-3-126-250-244.eu-central-1.compute.amazonaws.com'
 alias stage-helden='ssh -i ~/.ssh/ihrhelden-server-dev-stage.pem ubuntu@ec2-3-126-250-244.eu-central-1.compute.amazonaws.com'
 alias prod-helden='ssh -i ~/.ssh/ihrhelden-server-prod.pem ubuntu@ec2-52-29-174-7.eu-central-1.compute.amazonaws.com'
+alias stage-orc='ssh -i ~/.ssh/fin_resources ubuntu@3.7.46.100'
+alias sandbox-orc='ssh -i ~/.ssh/fin_resources ubuntu@13.233.184.8'
+alias prod-orc='ssh -i ~/.ssh/fin_resources ubuntu@3.110.213.135'
 
 # nano config
 export EDITOR=/usr/local/bin/nano
