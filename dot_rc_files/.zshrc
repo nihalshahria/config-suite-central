@@ -1,5 +1,20 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time Oh My Zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME=""
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -10,7 +25,7 @@ ZSH_THEME=""
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -101,6 +116,7 @@ if ! zplug check --verbose; then
     fi
 fi
 
+export GOPATH=~/Documents/go
 export PATH="$(go env GOPATH)/bin:$PATH"
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/nihalshahria/.docker/completions $fpath)
@@ -109,3 +125,5 @@ compinit
 # End of Docker CLI completions
 
 export GPG_TTY=$(tty)
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
